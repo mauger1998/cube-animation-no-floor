@@ -661,6 +661,244 @@ body {
     align-self:center;
 }
 
-/** 3D Ball ********/
+/** Orbit ********/
 /********************/
+
+.top-section__right {
+    display:grid;
+    place-items:center;
+}
+
+.orbit__li > img {
+    width:100px;
+}
+.orbit__main-container {
+    height:100vh;
+    width:100vw;
+    display:grid;
+    place-items:center;
+    background-color:black;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.orbit__center-image {
+    position:relative;
+    width:10rem;
+    
+}
+.orbit__center-image > img {
+    border-radius:1.5rem;
+    width:inherit;
+    position:absolute;
+}
+#orbit__ul,
+.top-nav__ul {
+    position:relative;
+    list-style:none;
+    display:grid;
+    place-items:center;
+    width:10rem;
+    height:7.5rem;
+    
+    
+}
+
+
+.orbit__li:hover ul:hover {
+    animation-play-state: paused;
+}
+
+.orbit__li {
+    position:absolute;
+    height:120px;
+    width:120px;
+    border-radius:100%;
+    display:grid;
+    place-items: center;
+    background-color:gray;
+    
+}
+#orbit__ul > li > p {
+    position:absolute;
+    animation: reverse-orbit 30s linear infinite;
+
+    transform-origin: center;
+    animation-duration: infinite;
+    color:white;
+    font-size:1.4rem;
+    background-color:gray;
+    height:100%;
+    width:100%;
+    border-radius:100%;
+    opacity:0;
+    display:grid;
+    place-items:center;
+}
+
+
+
+#orbit__ul:hover .orbit__li p {
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+li:nth-child(2) > img {
+    width:75px;
+}
+
+
+
+.orbit__list:hover {
+    cursor:pointer;
+    animation-play-state: paused;
+}
+
+#orbit__ul:hover {
+    animation-play-state: paused;
+
+}
+ul:hover li img {
+    animation-play-state: paused;
+}
+
+
+#firstList {
+    animation:li-one 1s forwards;
+    animation-delay:0s;
+    transform-origin: center;
+}
+#secondList {
+    animation:li-two 1s forwards;
+    animation-delay:500ms;
+    transform-origin: center;
+}
+#thirdList {
+    animation:li-three 1s forwards;
+    animation-delay:1000ms;
+    transform-origin: center;
+}
+#fourthList {
+    animation:li-four 1s forwards;
+    animation-delay:1500ms;
+    transform-origin: center;
+}
+#fifthList {
+    animation:li-five 1s forwards;
+    animation-delay:2000ms;
+    transform-origin: center;
+}
+#sixthList {
+    
+    animation:li-six 1s forwards;
+    animation-delay:2500ms;
+    transform-origin: center;
+}
+li:nth-child(7) {
+    
+    animation:li-seven 1s forwards;
+    animation-delay:3000ms;
+    transform-origin: center;
+}
+li:nth-child(8) {
+    
+    animation:li-eight 1s forwards;
+    animation-delay:3500ms;
+    transform-origin: center;
+}
+
+.orbit__li {
+    transition: transform 0.5s;
+}
+
+.orbit__li > img {
+    animation: reverse-orbit 30s linear infinite;
+    transform-origin: center;
+    animation-duration: infinite;
+}
+
+#orbit__ul {
+    
+    transform-origin: center;
+      
+}
+#orbit__ul {
+    animation: orbit 30s linear infinite;
+}
+
+#orbit__center-image {
+    position:relative;
+    display:grid;
+    place-items: center;
+}
+
+#orbit__ul .orbit__li:hover p {
+    opacity:1;
+    animation-play-state: paused;
+
+}
+@keyframes li-one {
+    to {
+        transform:translate(15rem, 0rem);
+    }
+}
+@keyframes li-two {
+    to {
+        transform: translate(11rem, 11rem);
+    }
+}
+@keyframes li-three {
+    to {
+        transform:translate(0rem, 15rem);
+    }
+}
+@keyframes li-four {
+    to {
+        transform:translate(-11rem, 11rem);
+    }
+}
+@keyframes li-five {
+    to {
+        transform:translate(-15rem, 0rem);
+    }
+}
+@keyframes li-six {
+    to {
+        transform:translate(-11rem, -11rem);
+    }
+}
+@keyframes li-seven {
+    to {
+        transform:translate(0rem, -15rem);
+    }
+}
+@keyframes li-eight {
+    to {
+        transform:translate(11rem, -11rem);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes orbit {
+    100% {
+        rotate:1turn;
+    }
+}
+@keyframes reverse-orbit {
+    100% {
+        rotate:-1turn;
+    }
+}
 
