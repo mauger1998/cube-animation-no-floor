@@ -494,22 +494,35 @@ body {
 
 /**** 3D Finished Portfolio Start ****
 *************************************/
-
+* {
+    color:white;
+}
 .main-section {
     height:100vh;
     width:100vw;
     padding:0;
     margin:0;
+    
 }
 .top-section {
     height:100vh;
     width:99vw;
+    font-size:25px;
+    
+}
+.top-section__grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin:0;
-    padding:0;
+    height:100vh;
+    width:99vw;
 }
 .top-section__left,
 .top-section__right {
     border:2px solid red;
+    height:100%;
+    width:100%;
+}
+.top-section__left {
+    display:flex;
+    flex-direction: column;
 }
