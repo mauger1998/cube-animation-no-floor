@@ -18,7 +18,7 @@ body {
     overflow-x:hidden;
     font-size:75px;
     perspective: 15em;
-    perspective-origin: 50% calc(70% - 2.5em);
+    perspective-origin: 50% calc(75% - 2.5em);
     display: grid;
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
     justify-items: center;
@@ -537,14 +537,16 @@ body {
     display:flex;
     flex-direction: column;
     width:42vw;
-    padding:2rem;
-    padding-top:18rem;
+    padding-right:5rem;
+    padding-top:8rem;
 }
 .portfolio-home__left-buttons {
     align-self:flex-end;
     gap:0.5rem;
     display:flex;
     width:50vw;
+    padding-bottom:3rem;
+    
     
 }
 .top-section__left {
@@ -554,7 +556,7 @@ body {
     gap:1rem;
     align-items: flex-start;
     width:50vw;
-    padding-left:6rem;
+    padding-left:8.5rem;
 }
  
  
@@ -568,7 +570,7 @@ body {
    -webkit-text-fill-color: transparent; 
    animation: animate 10s linear infinite;
    width:max-content;
-   font-size:4.5vw;
+   font-size:4.25vw;
    
  }
  .top-section__left h4 {
@@ -584,12 +586,13 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width:75%;
     text-align: right;
+    font-size:1.5rem;
 }
 
 
 /* Buttons */
 .portfolio-home__left-buttons button {
-    padding:1rem 2.75rem;
+    padding:0.75rem 2.75rem;
     border-radius:0.5em;
     text-transform: uppercase;
     align-self: flex-end;
@@ -613,21 +616,12 @@ body {
     font-weight:800;
     font-size:1.25rem;
     transition:0.5s;
-    border-radius:rem;
+    
 
 
 }
 
-.second-button:hover,
-#scroll-to-work__button:hover {
-    transform:scale(1.1);
-    transition:0.5s;
-}
-
-.portfolio-home__left-buttons button:hover {
-    background-color:white;
-    color:black;
-    transition:0.5s;
+button:hover {
     cursor:pointer;
 }
 .portfolio-home__left-buttons {
@@ -635,14 +629,14 @@ body {
     gap:0.5rem;
     display:flex;
     width:max-content;
-    padding-right:5rem;
+    padding-right:3.5rem;
 }
 #scroll-to-work__button {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
     background-size: 400%;
     border:none;
-    padding:1.35rem 2.75rem;
+    padding:1.1rem 2.75rem;
     transition:0.5s;
 
 }
@@ -653,8 +647,16 @@ body {
     width:50%;
     height:15%;
     align-self:flex-end;
-    margin-right:5rem;
+    margin-right:2rem;
+    text-align: center;
+    gap:1rem;
+    width:max-content
     
+}
+.portfolio-home__below h5 {
+    font-size:1.25rem;
+    width:max-content;
+    text-align: center;
 }
 .portfolio-home__below p {
     rotate:0.5turn;
@@ -667,6 +669,8 @@ body {
 .top-section__right {
     display:grid;
     place-items:center;
+    padding-bottom:6rem;
+
 }
 
 .orbit__li > img {
@@ -900,5 +904,24 @@ li:nth-child(8) {
     100% {
         rotate:-1turn;
     }
+}
+
+/*********Header**************/
+header ul {
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    font-size:1rem;
+    padding-top:3rem;
+    height:max-content;
+    
+    
+}
+header ul li {
+    text-transform:uppercase;
+    font-weight:500;
+    
 }
 
