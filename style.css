@@ -525,7 +525,6 @@ body {
 }
 .top-section__left,
 .top-section__right {
-    border:2px solid red;
     height:100%;
     width:50vw;
 }
@@ -537,14 +536,16 @@ body {
 .portfolio-home__introduction {
     display:flex;
     flex-direction: column;
-    width:50vw;
-    padding:2rem;;
+    width:42vw;
+    padding:2rem;
+    padding-top:18rem;
 }
 .portfolio-home__left-buttons {
     align-self:flex-end;
     gap:0.5rem;
     display:flex;
     width:50vw;
+    
 }
 .top-section__left {
     display:flex;
@@ -553,10 +554,8 @@ body {
     gap:1rem;
     align-items: flex-start;
     width:50vw;
-    
-    
-   
- }
+    padding-left:6rem;
+}
  
  
  .top-section__left h1 {
@@ -583,4 +582,85 @@ body {
     color:lightblue;
     align-self:flex-end;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:75%;
+    text-align: right;
 }
+
+
+/* Buttons */
+.portfolio-home__left-buttons button {
+    padding:1rem 2.75rem;
+    border-radius:0.5em;
+    text-transform: uppercase;
+    align-self: flex-end;
+    color:white;
+    background-color:transparent;
+    font-weight:700;
+    transition:0.5s;
+    
+}
+
+.second-button {
+    border:2px solid;
+    border-style: solid;
+    border-image-source:linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    border-image-slice:22;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:800;
+    font-size:1.25rem;
+    transition:0.5s;
+    border-radius:rem;
+
+
+}
+
+.second-button:hover,
+#scroll-to-work__button:hover {
+    transform:scale(1.1);
+    transition:0.5s;
+}
+
+.portfolio-home__left-buttons button:hover {
+    background-color:white;
+    color:black;
+    transition:0.5s;
+    cursor:pointer;
+}
+.portfolio-home__left-buttons {
+    align-self:flex-end;
+    gap:0.5rem;
+    display:flex;
+    width:max-content;
+    padding-right:5rem;
+}
+#scroll-to-work__button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 400%;
+    border:none;
+    padding:1.35rem 2.75rem;
+    transition:0.5s;
+
+}
+.portfolio-home__below {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width:50%;
+    height:15%;
+    align-self:flex-end;
+    margin-right:5rem;
+    
+}
+.portfolio-home__below p {
+    rotate:0.5turn;
+    align-self:center;
+}
+
+/** 3D Ball ********/
+/********************/
+
