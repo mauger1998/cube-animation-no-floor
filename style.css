@@ -560,6 +560,7 @@ body {
     align-items: flex-end;
     justify-content:center;
     width:50vw;
+    padding-bottom:3rem;
    
 }
  
@@ -574,7 +575,7 @@ body {
    -webkit-text-fill-color: transparent; 
    animation: animate 10s linear infinite;
    width:max-content;
-   font-size:5rem;
+   font-size:4.5rem;
    /* font-size:4.25vw; */
    
  }
@@ -615,7 +616,7 @@ body {
     -webkit-text-fill-color: transparent;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:800;
-    font-size:1.25rem;
+    font-size:1rem;
     transition:0.5s;
 }
 .second-button,
@@ -623,7 +624,7 @@ body {
     text-transform: uppercase;
     font-weight:600;
     width:11vw;
-    height:4vh;
+    height:5vh;
     border-radius:0.25rem;
 }
 
@@ -742,7 +743,7 @@ button:hover {
 }
 .card-one__image img {
     z-index:100;
-    width:400px;
+    width:350px;
     rotate:.02turn;
 }
 
@@ -795,6 +796,7 @@ button:hover {
 .card-one-title {
     transform:translateX(-30rem);
     opacity:0;
+    font-size:2rem;
 }
 .card-one-title-second {
     transform:translateX(-30rem);
@@ -810,12 +812,14 @@ button:hover {
 }
 .card-two__buttons {
     display:flex;
+    justify-content: flex-start;
     gap:0.4rem;
     padding-top:1rem;
+    width:100%;
 }
 
 .card-two__image img {
-    width:500px;
+    width:450px;
     margin-right:8rem;
 }
 .card-two__title-container {
@@ -823,11 +827,13 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     gap:0.5rem;
-    padding-left:10rem;
+    padding-left:8rem;
+    width:max-content;
 }
 .card-two-title {
     transform:translateX(-30rem);
     opacity:0;
+    font-size:2rem;
 }
 .card-two-title-second {
     transform:translateX(-30rem);
@@ -840,6 +846,11 @@ button:hover {
 .card-two__buttons {
     transform:translateY(30rem);
     opacity:1;
+    align-self: flex-start;
+}
+.card-two__buttons button {
+    width:max-content;
+    
 }
 
 /************************

@@ -67,7 +67,7 @@ gsap.to(".card-two-title", {
         trigger: ".card-one-title",
         scrub:true,
         start:"top bottom",
-        end:"+=800",
+        end:"+=700",
     },
     x:0,
     opacity:1
@@ -77,7 +77,7 @@ gsap.to(".card-two-title-second", {
         trigger: ".card-one-title",
         scrub:true,
         start:"top bottom",
-        end:"+=800",
+        end:"+=700",
     },
     x:0,
     opacity:1
@@ -87,7 +87,7 @@ gsap.to(".card-two__image", {
         trigger: ".card-one-title",
         scrub:true,
         start:"top bottom",
-        end:"+=800",
+        end:"+=700",
     },
     x:0,
     opacity:1
@@ -97,17 +97,17 @@ gsap.to(".card-two__buttons", {
         trigger: ".card-one-title",
         scrub:true,
         start:"top bottom",
-        end:"+=800",
+        end:"+=700",
     },
     y:0,
     opacity:1
 })
 gsap.to(".threeD-title", {
     scrollTrigger: {
-        trigger: ".threeD-title",
+        trigger: ".card-two__buttons",
         scrub:true,
         start:"top bottom",
-        end:"+=1200",
+        end:"+=400",
     },
     y:0,
     opacity:1,
