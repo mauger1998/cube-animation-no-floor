@@ -535,6 +535,9 @@ body {
 .top-section__left {
     display:flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:50vw;
     
 }
 .portfolio-home__introduction {
@@ -544,7 +547,6 @@ body {
     justify-content: center;
     width:max-content;
     padding-top:8rem;
-
 }
 .portfolio-home__introduction h4 {
     align-self:flex-start;
@@ -572,7 +574,8 @@ body {
    -webkit-text-fill-color: transparent; 
    animation: animate 10s linear infinite;
    width:max-content;
-   font-size:4.25vw;
+   font-size:5rem;
+   /* font-size:4.25vw; */
    
  }
  .top-section__left h4 {
@@ -700,7 +703,8 @@ button:hover {
 .second-section {
     height:100vh;
     width:100vw;
-    border:4px solid red;
+    display:flex;
+    flex-direction: column;
 }
 
 .second-section h2 {
@@ -714,7 +718,7 @@ button:hover {
    animation: animate 10s linear infinite;
    width:max-content;
    font-size:4vw;
-   padding:2rem;
+   padding-left:12rem;
 }
 
 
