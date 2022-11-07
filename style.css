@@ -21,7 +21,6 @@ body {
     perspective: 15em;
     perspective-origin: 50% calc(75% - 2.5em);
     display: grid;
-    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
     justify-items: center;
     align-items: center;
     
@@ -698,6 +697,26 @@ button:hover {
 /*********************
 **********************/
 
+.second-section {
+    height:100vh;
+    width:100vw;
+    border:4px solid red;
+}
+
+.second-section h2 {
+    font-weight: 800;
+   outline: none;
+   text-transform: uppercase;
+   background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+   background-size: 400%;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   animation: animate 10s linear infinite;
+   width:max-content;
+   font-size:4vw;
+   padding:2rem;
+}
+
 
 /** Orbit ********/
 /********************/
@@ -794,6 +813,21 @@ button:hover {
 li:nth-child(2) > img {
     width:75px;
 }
+li:nth-child(5) > img {
+    width:80px;
+}
+li:nth-child(6) > img {
+    width:80px;
+}
+li:nth-child(7) > img {
+    width:80px;
+}
+li:nth-child(3) > img {
+    width:130px;
+}
+li:nth-child(2) > img {
+    width:60px;
+}
 
 
 
@@ -884,6 +918,10 @@ li:nth-child(8) {
     opacity:1;
     animation-play-state: paused;
 
+}
+
+.js-logo {
+    width:20rem;
 }
 @keyframes li-one {
     to {
