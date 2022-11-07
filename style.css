@@ -352,7 +352,7 @@ body {
 .next {
     position: absolute;
     top:0em;
-    left:-3.5em;
+    left:-3em;
     transform:translateZ(-2em) translateY(1em) translateX(5.5em) rotateX(270deg) rotateY(180deg);
     color:white;
     width:max-content;
@@ -757,7 +757,7 @@ button:hover {
 }
 .card-one__buttons {
     display:flex;
-    gap:1rem;
+    gap:0.4rem;
     padding-top:1rem;
 }
 
@@ -783,6 +783,7 @@ button:hover {
     border:none;
     transition:0.5s;
     color:white;
+    border-radius:0.25rem;
 }
 .card button {
     color:white;
@@ -791,6 +792,76 @@ button:hover {
     font-size:1.25rem;
 }
 
+.card-one-title {
+    transform:translateX(-30rem);
+    opacity:0;
+}
+.card-one-title-second {
+    transform:translateX(-30rem);
+    opacity:0;
+}
+.card-one__image {
+    transform:translateX(30rem);
+    opacity:0;
+}
+.card-one__buttons {
+    transform:translateY(30rem);
+    opacity:1;
+}
+.card-two__buttons {
+    display:flex;
+    gap:0.4rem;
+    padding-top:1rem;
+}
+
+.card-two__image img {
+    width:500px;
+    margin-right:8rem;
+}
+.card-two__title-container {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.5rem;
+    padding-left:10rem;
+}
+.card-two-title {
+    transform:translateX(-30rem);
+    opacity:0;
+}
+.card-two-title-second {
+    transform:translateX(-30rem);
+    opacity:0;
+}
+.card-two__image {
+    transform:translateX(30rem);
+    opacity:0;
+}
+.card-two__buttons {
+    transform:translateY(30rem);
+    opacity:1;
+}
+
+/************************
+************************/
+.threeD-title h3 {
+    font-size:3rem;
+    font-weight: 800;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate 10s linear infinite;
+    width:max-content;
+    font-size:3vw;
+    
+}
+.threeD-title {
+    transform:translateY(-10rem);
+    opacity:0;
+}
 
 
 /** Orbit ********/
